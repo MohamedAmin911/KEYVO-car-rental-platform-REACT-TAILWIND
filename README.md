@@ -1,7 +1,8 @@
 # KEYVO Car Rental Platform
-[logo](public/logo.png)
+![logo](public/logo.png)
 
-**Live Demo:** [Add Vercel link here](https://your-vercel-link.vercel.app)
+Live Demo:
+[keyvo-car-rental.vercel.app](keyvo-car-rental.vercel.app)
 
 KEYVO is a modern car rental platform built with React, TypeScript, Redux Toolkit, and Tailwind CSS. The project focuses on a polished browsing experience, a full booking flow, and a simple account area for authentication and booking management.
 
@@ -108,60 +109,42 @@ src/
 - Route-based navigation with scroll-to-top behavior
 - Responsive layout across desktop and mobile screens
 
-## Deployment
-
-This project is ready to be deployed on Vercel.
-
-Suggested production steps:
-
-1. Push the repository to GitHub
-2. Import the repository into Vercel
-3. Set the framework preset to `Vite` if needed
-4. Deploy and replace the live demo placeholder above with the final URL
-
-## Future Improvements
-
-- Connect authentication to a real backend
-- Persist bookings in a database
-- Add availability checks for reserved dates
-- Add unit and integration tests
-- Improve code splitting for smaller production bundles
 
 ## Screenshots
 
 ### Home
 
-[home](public/screenshots/home.png)
+![home](public/screenshots/home.png)
 
 ### Cars
 
-[cars](public/screenshots/cars.png)
+![cars](public/screenshots/cars.png)
 
 ### Car Details
 
-[car-details](public/screenshots/car-details.png)
+![car-details](public/screenshots/car-details.png)
 
 ### Checkout
 
-[checkout](public/screenshots/checkout.png)
+![checkout](public/screenshots/checkout.png)
 
 ### Payment
 
-[payment](public/screenshots/payment.png)
+![payment](public/screenshots/payment.png)
 
 ### Dashboard
 
-[dashboard](public/screenshots/dashboard.png)
+![dashboard](public/screenshots/dashboard.png)
 
 ### Login
 
-[login](public/screenshots/login.png)
+![login](public/screenshots/login.png)
 
 ### Signup
 
-[signup](public/screenshots/signup.png)
+![signup](public/screenshots/signup.png)
 
 
 ### About
 
-[about us](public/screenshots/aboutus.png)
+![about us](public/screenshots/aboutus.png)

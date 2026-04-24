@@ -96,7 +96,7 @@ export const Profile: React.FC = () => {
                       className="card-gradient border border-white/10 rounded-[32px] p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center"
                     >
                        <div className="w-full md:w-40 h-28 bg-white/5 rounded-2xl p-2 flex items-center justify-center overflow-hidden">
-                          <img src={car?.image} alt="car" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" />
+                          <img src={car?.images[0]} alt="car" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" />
                        </div>
 
                        <div className="flex-1 text-center md:text-right space-y-2">

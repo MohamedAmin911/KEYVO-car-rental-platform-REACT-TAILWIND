@@ -108,24 +108,6 @@ src/
 - Route-based navigation with scroll-to-top behavior
 - Responsive layout across desktop and mobile screens
 
-## Deployment
-
-This project is ready to be deployed on Vercel.
-
-Suggested production steps:
-
-1. Push the repository to GitHub
-2. Import the repository into Vercel
-3. Set the framework preset to `Vite` if needed
-4. Deploy and replace the live demo placeholder above with the final URL
-
-## Future Improvements
-
-- Connect authentication to a real backend
-- Persist bookings in a database
-- Add availability checks for reserved dates
-- Add unit and integration tests
-- Improve code splitting for smaller production bundles
 
 ## Screenshots
 

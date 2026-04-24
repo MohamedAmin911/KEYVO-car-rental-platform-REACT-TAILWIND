@@ -39,9 +39,10 @@ export const Signup: React.FC = () => {
         dispatch(signupSuccess({
           id: 'new-user',
           name: values.name,
-          email: values.email
+          email: values.email,
+          password: values.password
         }));
-        navigate('/profile');
+        navigate('/login');
       }, 1500);
     },
   });

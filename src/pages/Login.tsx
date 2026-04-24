@@ -15,7 +15,7 @@ import { Logo } from '../components/common/Logo';
 export const Login: React.FC = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { loading, error } = useSelector((state: RootState) => state.auth);
+  const { registeredUsers, loading, error } = useSelector((state: RootState) => state.auth);
 
   const formik = useFormik({
     initialValues: {
@@ -30,7 +30,18 @@ export const Login: React.FC = () => {
       dispatch(loginStart());
       // Simulate API call
       setTimeout(() => {
-        if (values.password === '123456') { // Simple simulation
+        const registeredUser = registeredUsers.find(
+          (user) => user.email === values.email && user.password === values.password
+        );
+
+        if (registeredUser) {
+          dispatch(loginSuccess({
+            id: registeredUser.id,
+            name: registeredUser.name,
+            email: registeredUser.email
+          }));
+          navigate('/profile');
+        } else if (values.password === '123456') { // Simple simulation
           dispatch(loginSuccess({
             id: '1',
             name: 'أحمد محمد',

@@ -8,8 +8,13 @@ interface User {
   avatar?: string;
 }
 
+interface RegisteredUser extends User {
+  password: string;
+}
+
 interface AuthState {
   user: User | null;
+  registeredUsers: RegisteredUser[];
   isAuthenticated: boolean;
   loading: boolean;
   error: string | null;
@@ -17,6 +22,7 @@ interface AuthState {
 
 const initialState: AuthState = {
   user: null,
+  registeredUsers: [],
   isAuthenticated: false,
   loading: false,
   error: null,
@@ -43,9 +49,13 @@ const authSlice = createSlice({
       state.user = null;
       state.isAuthenticated = false;
     },
-    signupSuccess: (state, action: PayloadAction<User>) => {
-      state.user = action.payload;
-      state.isAuthenticated = true;
+    signupSuccess: (state, action: PayloadAction<RegisteredUser>) => {
+      state.registeredUsers = state.registeredUsers.filter(
+        (user) => user.email !== action.payload.email
+      );
+      state.registeredUsers.push(action.payload);
+      state.user = null;
+      state.isAuthenticated = false;
       state.loading = false;
     }
   },

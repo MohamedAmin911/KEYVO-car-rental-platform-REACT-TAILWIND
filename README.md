@@ -1,5 +1,5 @@
 # KEYVO Car Rental Platform
-logo.png
+[logo](public/logo.png)
 
 **Live Demo:** [Add Vercel link here](https://your-vercel-link.vercel.app)
 
@@ -129,41 +129,39 @@ Suggested production steps:
 
 ## Screenshots
 
-Add screenshots for each page below once they are ready.
-
 ### Home
 
-screenshots/home.png
+[home](public/screenshots/home.png)
 
 ### Cars
 
-screenshots/cars.png
+[cars](public/screenshots/cars.png)
 
 ### Car Details
 
-screenshots/car-details.png
+[car-details](public/screenshots/car-details.png)
 
 ### Checkout
 
-screenshots/checkout.png`
+[checkout](public/screenshots/checkout.png)
 
 ### Payment
 
-screenshots/payment.png
-
-
-### Login
-
-screenshots/login.png
-
-### Signup
-
-screenshots/signup.png
+[payment](public/screenshots/payment.png)
 
 ### Dashboard
 
-screenshots/dashboard.png
+[dashboard](public/screenshots/dashboard.png)
+
+### Login
+
+[login](public/screenshots/login.png)
+
+### Signup
+
+[signup](public/screenshots/signup.png)
+
 
 ### About
 
-screenshots/about-page.png
+[about us](public/screenshots/aboutus.png)

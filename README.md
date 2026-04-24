@@ -132,6 +132,10 @@ src/
 
 ![payment](public/screenshots/payment.png)
 
+### Completed Payment
+
+![completed payment](public/screenshots/completedPayment.png)
+
 ### Dashboard
 
 ![dashboard](public/screenshots/dashboard.png)

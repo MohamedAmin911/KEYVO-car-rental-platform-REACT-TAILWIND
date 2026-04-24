@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+/* Leaflet Dark Theme */
+.leaflet-container {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%) !important;
+  background: #121212 !important;
+}
+
+/* Adjust marker colors back to original after inversion (optional, but markers look cool in neon too) */
+.leaflet-marker-icon {
+  filter: invert(100%) hue-rotate(180deg) !important;
+}
+
+@theme {
+  --font-sans: "Cairo", "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Cairo", sans-serif;
+  --color-primary: #EFFF00;
+  --color-bg-dark: #121212;
+  --color-card-dark: #1E1E1E;
+  
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+}
+
+@layer base {
+  body {
+    background-color: #121212;
+    color: white;
+    @apply font-sans antialiased;
+    direction: rtl;
+  }
+}
+
+@layer components {
+  .primary-glow {
+    text-shadow: 0 0 15px rgba(239, 255, 0, 0.4);
+  }
+
+  .card-gradient {
+    background: linear-gradient(145deg, #1e1e1e 0%, #121212 100%);
+  }
+  
+  .geometric-border {
+    @apply border border-white/10;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}

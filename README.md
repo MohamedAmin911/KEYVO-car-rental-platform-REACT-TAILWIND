@@ -1,7 +1,7 @@
 # KEYVO Car Rental Platform
 ![logo](public/logo.png)
 
-**Live Demo:** 
+Live Demo:
 keyvo-car-rental.vercel.app
 
 KEYVO is a modern car rental platform built with React, TypeScript, Redux Toolkit, and Tailwind CSS. The project focuses on a polished browsing experience, a full booking flow, and a simple account area for authentication and booking management.

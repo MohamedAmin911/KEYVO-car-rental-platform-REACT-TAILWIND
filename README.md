@@ -1,5 +1,5 @@
 # KEYVO Car Rental Platform
-[logo](public/logo.png)
+(public/logo.png)
 
 **Live Demo:** [Add Vercel link here](https://your-vercel-link.vercel.app)
 
